@@ -7,7 +7,7 @@ export const createNewListingRoute ={
     handler: async (req, h) =>{
         const id = uuid();
         const {name = '', description = '', price = '', } = req.payload;
-        const userId = '1234';
+        const userId = '12345';
         const views = 0;
 
         await db.query(`

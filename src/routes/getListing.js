@@ -8,7 +8,7 @@ export const getListingRoute = {
         const id = req.params.id;
         //avoiding sql injections
         const {results} = await db.query(
-            'SELECT * FROM listing WHERE id=?',
+            'SELECT * FROM listings WHERE id=?',
             [id],
         );
         const listing = results[0]
